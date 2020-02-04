@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Настройки страницы -->
+	<meta charset="utf-8">
+	<title>Single_html</title>
+	
+    <!-- Параметры для мобильного телефона -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS внешнее подключение -->
+  	<link rel="stylesheet" href="css/info.css">
+	<link rel="stylesheet" href="css/column.css">
+	<link rel="stylesheet" href="css/slides.css">
+	
+    <script>
+		$(function () {
+		  // Слайдшоу
+		  $("#slider").responsiveSlides({
+			auto: true,
+			pager: false,
+			nav: true,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+			  $('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+			  $('.events').append("<li>after event fired.</li>");
+			}
+		  });
+		});
+	</script>
+</head>
+<body class="contactpage">
+<div class="body_wrap">
+
+<!--Header-->
+<header>
+	<div class="header_wrap info">
+		<div class="row">
+			<div id="menu_css">
+				<ul>
+				   <li class='active'><a href="index.html">Главная страница</a></li>
+				    <li><a href="about.html">О нас</a></li>
+				   <li><a href="projects.html">Проекты</a></li>
+				   <li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</div>
+			<a href='index.html' class="logotype"><img src="" /></a>
+		</div>
+	</div>
+</header>
+
+
+
+<!--Контейнер-->
+<section id="container">
+	<div class="container_wrap">
+
+		<!-----------------Первый бокс с содержимым-------------------->
+		<section class="contentbox">
+			<div class="info">
+				<div class="row box_wrap">
+					<div id="main_content">
+						<div class="wrap_content">
+							<article>
+								<div class="art_header">
+									<h1 class="entry_title">Название статьи</h1>
+								</div>
+								<div class="art_content">
+									
+									<div class="excerpt"><p>Информация.</p></div>
+									<p>Ввести много информации.</p>
+									<blockquote><p>Цитата.</p></blockquote>
+									<p>Информация.</p>
+									<h2>Заголовок</h2>
+									<p>Ввести информацию.</p>
+									<h2>Заголовок</h2>
+									<p>Ввести информацию.</p>
+									<h2>Заголовок</h2>
+									<p>Ввести информацию.</p>
+									<p>Ввести информацию.</p>
+									<p><code>Ввести информацию.</code></p>
+									<p>Ввести информацию.</p>
+									<div class="note">
+									  <ol>
+										<li>Добавить информацию</li>
+										<li>Добавить информацию</li>
+										<li>Добавить информацию</li>
+									  </ol>
+									  <div class="clear"></div>
+									</div>
+									<p>Добавить информацию.</p>
+									<p>Добавить информацию.</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+</section>
+
+<!--Подвал сайта-->
+<footer>
+	<div class='embed-container maps' style="margin: 0; padding: 0;">
+		<iframe src="" width="100%" height="250px" frameborder="0" style="border: 0;"></iframe>
+	</div>
+	<div class="footer_wrap">
+		<div class="info">
+			<div class="row">
+				<h3>Cвязаться</h3>
+				<span>Телефон / Ввести номер телефона </span></br>
+				<span>Email / Ввести почту  </span></br>
+				<span>Адрес </span></br>
+				<span><strong>Информация </strong></span>
+				<ul class="media_buttons">
+					<li><a href="#"><i class="fa fa-twitter"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-facebook"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+	<!--Карты гугл-->
+	<script>
+		$('.maps').click(function () {
+		$('.maps iframe').css("pointer-events", "auto");
+	});
+
+	$( ".maps" ).mouseleave(function() {
+	  $('.maps iframe').css("pointer-events", "none"); 
+	});
+	</script>
+	
+</div>
+</body>
+</html>

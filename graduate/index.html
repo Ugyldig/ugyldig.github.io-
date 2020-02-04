@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Настройки страницы -->
+	<meta charset="utf-8">
+	<title>Index_html</title>
+	
+    <!-- Параметры для мобильного телефона -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS внешнее подключение -->
+  	<link rel="stylesheet" href="css/column.css">
+	<link rel="stylesheet" href="css/info.css">
+	<link rel="stylesheet" href="slides.css">
+    <script>
+		$(function () {
+		  // Слайдшоу
+		  $("#slider").responsiveSlides({
+			auto: true,
+			pager: false,
+			nav: true,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+			  $('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+			  $('.events').append("<li>after event fired.</li>");
+			}
+		  });
+		});
+	</script>
+    
+</head>
+<body class="homepage">
+<div class="body_wrap">
+
+<!--Header-->
+<header >
+	<div class="header_wrap info">
+		<div class="row">
+			<div id="menu_css">
+				<ul>
+				   <li class='active'><a href="index.html">Главная страница</a></li>
+				   <li><a href="about.html">О нас</a></li>
+				   <li><a href="projects.html">Проекты</a></li>
+				   <li><a href="contact.html">Контакты</a></li>
+				</ul>
+			</div>
+			<a href='index.html' class="logotype"><img src="" /></a>
+		</div>
+	</div>
+</header>
+<div class="sliders">
+	<!-- Слайдшоу-->
+	<div class="callbacks_container" >
+		<ul class="rslides" id="slider">
+			<li>
+				<img src="https://1house.by/wp-content/uploads/2017/01/Perspektiva-12.jpg" alt="">
+				<div class="frame">
+					<h1>Информация</h1>
+					<span > Описание.<br> Описание.</span>
+					<div class="price">Цена</div>
+				</div>
+			</li>
+			<li>
+				<img src="https://turbo.network/hqroom/image/upload/c_limit,f_auto,h_10000,q_15,w_1500/v1570624328/post/3d6d7cb9f7c865fbc0aa4264/a7657bad23539cfcGicI9HZtC07mZLIK.jpg" alt="">
+				<div class="frame">
+					<h1>Информация</h1>
+					<span > Расширенное описание.</span>
+					<div class="price">Цена</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+
+
+<!--Контейнер-->
+<section id="container">
+	<div class="container_wrap">
+		<!-----------------Первый бокс с содержимым-------------------->
+		<section class="contentbox boxstyle2 box1">
+			<div class="info">
+				<div class="row box_wrap t_center">
+					<h1>Здравствуйте!</h1>
+					<span>Добро пожаловать!</span>
+					<p>Добавить информацию с описанием на две строки.</p>
+				</div>
+			</div>
+		</section>
+		
+		<!-----------------Второй бокс с содержимым-------------------->
+		<section class="contentbox boxstyle1 box2">
+			<div class="info">
+				<div class="row box_wrap">
+					<h2>Приобрети дом своей мечты!</h2>
+					<span>Добавить информацию с описанием на строку</span>
+				</div>
+			</div>
+		</section>
+		
+		<!-----------------Третий контейнер с содержимым-------------------->
+		<section class="contentbox box3">
+			<div class="info">
+				<div class="row box_wrap">
+					<div class="row">
+						<div class="column_one_three">
+							<div class="column_wrap wrapper">
+								<h3>Название колонки</h3>
+								<span>Добавить описание колонки</span>
+								<p>Краткое содержание.</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+						<div class="column_one_three">
+							<div class="column_wrap wrapper">
+								<h3>Название колонки</h3>
+								<span>Добавить описание колонки</span>
+								<p>Краткое содержание.</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+						<div class="column_one_three">
+							<div class="column_wrap wrapper">
+								<h3>Название колонки</h3>
+								<span>Добавить содержание колонки</span>
+								<p>Краткое содержание.</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-----------------Четвёртый контейнер с содержимым-------------------->
+		<section class="contentbox boxstyle2 box4">
+			<div class="info">
+				<div class="row box_wrap">
+					<div class="header">
+						<div class="wrapper">
+							<h2>Возможные варианты</h2>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="column_one_four">
+							<div class="column_wrap post">
+								<img class="offer_image" src="https://datafile9.arkadia.com/pictures/properties/fullsize/21-2772222-448650627808572222.jpg" alt=""/>
+								<div class="price">249,000 USD</div>
+								<h3>Дом на продажу</h3>
+								<p>3 спальни, 2 ванные комнаты с замечательной планировкой. Огороженый участок со<br>
+								Зрелым ландшафтным дизайном. Гранитные столешницы на кухне и в ванной. Бытовая техника<br>
+							    из нержавеющей стали. Отличное расположение и близость к автомагистралям.</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+						<div class="column_one_four">
+							<div class="column_wrap post">
+								<img class="offer_image" src="https://datafile5.arkadia.com/pictures/properties/fullsize/1-6956806-1002384170753597814.jpg" alt=""/>
+								<div class="price">174,000 USD</div>
+								<h3>Дом на продажу</h3>
+								<p>Уютный дом в тридцати минутах от центра. 3 спальни, 3 ванные, паркова,<br>
+								Общая площадь дома 129 м².</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+						<div class="column_one_four">
+							<div class="column_wrap post">
+								<img class="offer_image" src="https://vip-1gl.ru/vipberrrt/6412dizajn-fasadov-zagorodnyh-domov.jpg" alt=""/>
+								<div class="price">$ 50,000</div>
+								<h3>Дом на продажу.</h3>
+								<p>Добавить описание дома.</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+						<div class="column_one_four">
+							<div class="column_wrap post">
+								<img class="offer_image" src="https://turbo.network/hqroom/image/upload/c_limit,f_auto,h_10000,q_15,w_1600/v1573735994/post/d63538e017d98621ec7dff5d/382b20acd97adcfbxnKamnGEf7Q6rRBa.jpg" alt=""/>
+								<div class="price">$ 25,000</div>
+								<h3>Дом на продажу.</h3>
+								<p>Добавить описание дома.</p>
+								<a class="button" href="single.html">Узнать больше</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+	</div>
+</section>
+
+<!--Подвал сайта-->
+<footer>
+	<div class='embed-container maps' style="margin: 0; padding: 0;">
+		<iframe src="" width="100%" height="250px" frameborder="0" style="border: 0;"></iframe>
+	</div>
+	<div class="footer_wrap">
+		<div class="info">
+			<div class="row">
+				<h3>Связаться</h3>
+				<span>Телефон / Ввести номер телефона </span></br>
+				<span>Email / Ввести почту  </span></br>
+				<span>Адрес </span></br>
+				<span><strong>Информация </strong></span>
+				<ul class="media_buttons">
+					<li><a href="#"><i class="fa fa-twitter"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-facebook"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a>
+					</li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+	<!-- Гугл карты -->
+	<script>
+		$('.maps').click(function () {
+		$('.maps iframe').css("pointer-events", "auto");
+	});
+
+	$( ".maps" ).mouseleave(function() {
+	  $('.maps iframe').css("pointer-events", "none"); 
+	});
+	</script>
+	
+</div>
+</body>
+</html>
