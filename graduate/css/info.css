@@ -98,9 +98,10 @@ header .logotype img{display: inline-block;
                              display: inline-block;}
 
 .contentbox.boxstyle1{background-attachment:fixed; 
-                      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS0EKCas2tccAx5Iu-rHjql0hR1zb6g5YwqwhfJIAYqEJM11_R0); 
+                      background-image: url(https://img.fonwall.ru/o/47/koja-chernaya-poverhnost-blesk.jpg); 
                       background-color: #222;
-                      color:#fff;}
+                      color:#fff;
+                      }
 .contentbox.boxstyle2{background:#F4F3F3;}
 
 .contentbox.box1 {}
@@ -153,6 +154,8 @@ header .logotype img{display: inline-block;
 .contentbox.box4 img{margin-bottom: 30px;
                      max-width: 250px;
                      border-radius: 50%;}
+.contentbox boxstyle2 box4>.info>.row box_wrap>.header>.wrapper>h2{text-align:center;}
+.contentbox>div>div>div>div>div>h2{text-align:center;}
 
 
 
@@ -187,7 +190,7 @@ article .art_content ol {float: left;
                          list-style-type: circle;}
 
 article .entry_title {text-align: center;
-                      background: url(https://i.pinimg.com/originals/49/16/ba/4916baf0575b121dac9bb85e23f80c21.jpg) no-repeat center center;
+                      background: url(https://cardinaleducation.com/alpha/wp-content/uploads/Cardinal-Ed-Banner-Home-1920-650-1.jpg) no-repeat center center;)
                       min-height: 250px;padding-top: 100px;}
 article  h1.entry_title{line-height: 1.2;
                         font-size: 40px;
@@ -202,8 +205,10 @@ article .info a:hover{ text-decoration: underline;}
 /* ---------Подвал сайта-------- */
 
 footer{text-align: center;
-       background-image: url(https://static.moydom.ru/st1/1200/zgtjagvl/15269664885b03a8d84c037.jpg);
-       min-height: 650px;}
+       background-image: url(https://fanparty.ru/fanclubs/supernatural/gallery/645436_supernatural.jpg);
+       min-height: 650px;
+     
+       }
 footer a{color: #fff;}
 footer .footer_wrap{color: #fff;
                     font-size: 13px;
@@ -219,12 +224,12 @@ footer ul.media_buttons li a{padding-top: 15px;
                              font-size: 37px;
                              line-height: 2;
                              color: #ffffff;
-                             background-color: #lightblue;
+                             background-color: lightblue;
                              transition-duration: 0.3s;
                              margin-right: 8px;}
 footer ul.media_buttons li a:hover,
 ul.media_buttons li a:focus,
-ul media_buttons li a:active{background-color: #lightblue;}
+ul media_buttons li a:active{background-color: black;}
 
 /* ------------Кнопка-------------- */
 
@@ -536,11 +541,11 @@ a.button:hover{background-color: #5ABD5E;}
   #menu_css .submenu_button.submenu_opened {
     background: #262626;
   }
-  #menu_css ul ul .submenu-button {
+  #menu_css ul ul .submenu_button {
     height: 34px;
     width: 34px;
   }
-  #menu_css .submenu-button:after {
+  #menu_css .submenu_button:after {
     position: absolute;
     top: 22px;
     right: 19px;
@@ -567,11 +572,11 @@ a.button:hover{background-color: #5ABD5E;}
     background: #dddddd;
     content: '';
   }
-  #menu_css ul ul .submenu-button:before {
+  #menu_css ul ul .submenu_button:before {
     top: 12px;
     right: 16px;
   }
-  #cssmenu .submenu-button.submenu-opened:before {
+  #cssmenu .submenu-button.submenu_opened:before {
     display: none;
   }
 }
@@ -587,7 +592,7 @@ a.button:hover{background-color: #5ABD5E;}
   width: 100%;
   }
 
-.callbacks {
+.callbacks_container {
   position: relative;
   list-style: none;
   overflow: hidden;
@@ -596,14 +601,14 @@ a.button:hover{background-color: #5ABD5E;}
   margin: 0;
   }
 
-.callbacks li {
+.callbacks_container li {
   position: absolute;
   width: 100%;
   left: 0;
   top: 0;
   }
 
-.callbacks img {
+.callbacks_container img {
   display: block;
   position: relative;
   z-index: 1;
@@ -626,27 +631,35 @@ a.button:hover{background-color: #5ABD5E;}
   margin: 0;
   max-width: none;
 }
-.callbacks .frame h1{font-size: 57px;
+.callbacks_container .frame h1{font-size: 57px;
                        margin-bottom: 40px;
                        font-weight: 500;}
-.callbacks .frame span{font-size: 24px;
+.callbacks_container .frame span{font-size: 24px;
                          color: #ccc;
                          line-height: 1.2;}
-.callbacks .frame .price{font-size: 60px; 
+.callbacks_container .frame .price{font-size: 60px; 
                          color: #5ABD5E; 
                          line-height: 1.2; 
                          margin-top: 30px;}
 
-@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px){
-	.callbacks .frame {padding: 12px 10px 5px;}
-	.callbacks .frame h1{font-size: 20px;
+@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio:
+                                                     2) and (max-width: 1024px),
+                                                    only screen and (min--moz-device-pixel-ratio: 
+                                                     2) and (max-width: 1024px),
+                                                     only screen and (-o-min-device-pixel-ratio:
+                                                    2/1) and (max-width: 1024px), 
+                                                    only screen and (min-device-pixel-ratio: 
+                                                    2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), 
+                                                    only screen and (min-resolution: 2dppx) and (max-width: 1024px){
+	.callbacks_container .frame {padding: 12px 10px 5px;}
+	.callbacks_container .frame h1{font-size: 20px;
                                margin-bottom: 0;
                                line-height: 1.2;}
-	.callbacks .frame span{font-size: 12px;
+	.callbacks_container .frame span{font-size: 12px;
                                line-height: 1.2;}
 }
 @media(max-width: 468px){
-	.callbacks .frame {display:none;}
+	.callbacks_container .frame {display:none;}
 }
 
 .callbacks_nav {
